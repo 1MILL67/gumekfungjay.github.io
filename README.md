@@ -11,28 +11,29 @@
       background:#111;
       color:#fff;
       font-family:sans-serif;
-    }
-    .box {
       text-align:center;
-    }
-    button {
-      padding:10px 20px;
-      margin-top:15px;
-      font-size:16px;
+      padding:20px;
     }
   </style>
 </head>
 <body>
-  <div class="box">
-    <h2>กำลังพาไปยังหน้าดาวน์โหลด</h2>
-    <p>กรุณากดปุ่มด้านล่าง</p>
-    <button onclick="go()">Continue</button>
+
+  <div id="msg">
+    กำลังโหลด...
   </div>
 
   <script>
-    function go(){
-      window.location.href="ใส่ลิงก์ Linkvertise ของมึง";
+    var ua = navigator.userAgent || navigator.vendor || window.opera;
+
+    // ตรวจว่าเป็น TikTok in-app browser
+    if (ua.includes("TikTok")) {
+      document.getElementById("msg").innerHTML =
+        "กรุณากด 3 จุดมุมขวาบน แล้วเลือกเปิดในเบราว์เซอร์<br><br>(Open in browser)";
+    } else {
+      // ถ้าไม่ใช่ TikTok → เด้งไปลิงก์จริง
+      window.location.href = "https://direct-link.net/1392048/UeGg76F34TFm";
     }
   </script>
+
 </body>
 </html>
