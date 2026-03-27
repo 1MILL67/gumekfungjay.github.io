@@ -1,4 +1,101 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Access Required</title>
+
 <script src="https://publisher.linkvertise.com/cdn/linkvertise.js"></script>
 <script>
 linkvertise(1392048, {whitelist: [], blacklist: ["mekfung1mill"]});
 </script>
+
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #1e1e2f, #121212);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.container {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(15px);
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  width: 320px;
+  box-shadow: 0 0 40px rgba(0,0,0,0.5);
+  animation: fadeIn 0.6s ease;
+}
+
+h2 { margin-bottom: 10px; }
+
+p {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.button {
+  margin-top: 20px;
+  padding: 14px;
+  width: 100%;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.unlock {
+  background: #ff3c3c;
+  color: white;
+}
+
+.unlock:hover {
+  background: #ff1f1f;
+}
+
+.arrow {
+  font-size: 30px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: scale(0.9);}
+  to {opacity: 1; transform: scale(1);}
+}
+</style>
+</head>
+
+<body>
+
+<div class="arrow">⋮</div>
+
+<div class="container">
+  <h2>🔒 Access Locked</h2>
+  <p>กรุณากด <b>3 จุดมุมขวาบน</b><br>แล้วเลือก “เปิดในเบราว์เซอร์”</p>
+
+  <button class="button unlock" onclick="goLink()">ฉันทำแล้ว</button>
+</div>
+
+<script>
+function goLink() {
+  window.location.href = "https://direct-link.net/1392048/UeGg76F34TFm";
+}
+</script>
+
+</body>
+</html>
